@@ -1,0 +1,42 @@
+import webbrowser
+new=3
+url1="www.olymptrade";
+url2="www.iqoption.com";
+url3="www.zerodha.com";
+
+webbrowser.open(url1,new=new)
+webbrowser.open(url2,new=new)
+webbrowser.open(url3,new=new)
+print("you can put your money on several criteria for earning...risks to mrketting sources")
+a=input("1 for Gold")
+a1 = [101, 220, 330] 
+a2 = [120, 210, 340]
+if  a1 is a2: 
+    print("Yes,price of gold is smae") 
+else: 
+    print("No")
+b=input("2 for Forex")
+b1 = [101, 220, 330] 
+ab2 = [120, 210, 340]
+if  b1 is b2: 
+    print("Yes,price of Forex varies") 
+else: 
+    print("No")
+c=input("3 for Crude oil")
+c1 = [101, 220, 330] 
+c2 = [120, 210, 340]
+if  c1 is c2: 
+    print("Yes,market is very volatile right now") 
+else: 
+    print("No")
+File1=open("web1.txt","r")
+File2=open("web.txt","r")
+for line1 in File1:
+    for line2 in File2:
+        if line1==line2:
+            print("SAME PRICE IS GIVEN AT EACH SITE\n")
+        else:
+            print(line1 + line2)
+        break
+File1.close()
+File2.close()
